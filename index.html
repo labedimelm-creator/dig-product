@@ -1,1 +1,28 @@
-
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f3ed" />
+  <meta name="description" content="Prototype أولي يساعد الطالب الجامعي اللي يتمرّن يخطط لأسبوع الامتحانات ويبدّل خطته كي يتبدّل نهاره." />
+  <title>طالب ورياضة — خطة أسبوع الامتحان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <dialog id="preorder-dialog" class="dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="إغلاق">×</button></form>
+    <p class="eyebrow">مشاركة في الاختبار</p>
+    <h2>Prototype أولي، ماشي منتج جاهز</h2>
+    <p id="offer-status"></p>
+    <p id="offer-refund"></p>
+    <p class="small muted">هذي خطوة تواصل فقط. ما كاينش دفع عبر الصفحة، ورسالة واتساب ما تعنيش شراء أو تأكيد طلب.</p>
+    <a id="whatsapp-link" class="button primary full" target="_blank" rel="noopener noreferrer">كمل على WhatsApp</a>
+    <p id="contact-status" class="small muted" aria-live="polite"></p>
+  </dialog>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
